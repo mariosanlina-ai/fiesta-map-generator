@@ -1,60 +1,51 @@
-# Fiesta Online Map Generator
-
-## Project Documentation
-This project is a map generator for the game Fiesta Online. It allows users to create and customize game maps with ease.
+# Fiesta Map Generator
 
 ## Features
-- Generate maps for different game modes.
-- Customize terrain and objects.
-- Export maps in the required format for Fiesta Online.
+- Generate customizable maps for various applications
+- User-friendly interface for easy map manipulation
+- Supports multiple formats for map export
+- Built-in templates for rapid map creation
 
-## Setup Instructions
-1. **Clone the repository:**  
+## Installation
+1. Clone the repository:
    ```bash
    git clone https://github.com/mariosanlina-ai/fiesta-map-generator.git
+   ```
+2. Change into the directory:
+   ```bash
    cd fiesta-map-generator
-   ```  
-
-2. **Install dependencies:**  
-   Make sure you have Python (version 3.7 or higher) installed.  
+   ```
+3. Install dependencies:
    ```bash
-   pip install -r requirements.txt
-   ```  
-
-3. **Run the application:**  
-   ```bash
-   python main.py
+   npm install
    ```
 
-## Usage Examples
-Once the application is running, you can generate a new map using the following commands:
-
-1. **Create a new map:**  
+## Usage
+1. Start the application:
    ```bash
-   create_map --name "MyFirstMap" --mode adventure
+   npm start
    ```
+2. Open your web browser and go to `http://localhost:3000`.
+3. Use the interface to create and customize your maps.
 
-2. **Customize the map:**  
-   Add terrain and objects with the following commands:  
-   ```bash
-   add_terrain --type grass --coordinates 10,15
-   add_object --type tree --coordinates 12,15
-   ```
+## Project Structure
+```
+fiesta-map-generator/
+├── src/                # Source code
+│   ├── components/     # React components
+│   ├── assets/         # Images, icons, etc.
+│   └── utils/          # Utility functions
+├── public/             # Public assets
+├── package.json        # Project metadata and dependencies
+└── README.md           # Project documentation
+```
 
-3. **Export the map:**  
-   ```bash
-   export_map --name "MyFirstMap" --format json
-   ```
+## Troubleshooting
+- **I'm having problems with npm commands:**
+  Ensure you have Node.js installed. You can download it from [nodejs.org](https://nodejs.org/).
 
-## Contributing
-If you would like to contribute to this project, please fork the repository and submit a pull request with your changes.
+- **The server isn’t starting:**
+  Check if you have the necessary permissions and that the port (3000) is not being used by another application.
 
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Contact
-For any inquiries, please reach out to:  
-**Mariosan Lina**  
-[mariosanlina-ai@example.com](mailto:mariosanlina-ai@example.com)  
-
-Happy mapping!
+- **Maps don’t generate properly:**
+  Ensure you’re following the correct steps in the usage section, and check for any console errors in your browser's developer tools.
